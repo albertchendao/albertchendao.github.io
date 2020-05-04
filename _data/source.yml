@@ -1,0 +1,51 @@
+# Python
+- name: 知乎登陆集成包
+  url: https://github.com/7sDream/zhihu-oauth
+- name: Tools for managing requirements files
+  url: http://link.zhihu.com/?target=https%3A//github.com/kennethreitz/pip-pop
+- name: Python Subprocesses for Humans
+  url: http://link.zhihu.com/?target=https%3A//github.com/kennethreitz/envoy
+- name: SQL for Humans
+  url: http://link.zhihu.com/?target=https%3A//github.com/kennethreitz/records
+- name: A simple but flexible plugin system for Python
+  url: http://link.zhihu.com/?target=https%3A//github.com/mitsuhiko/pluginbase
+- name: pip script installer
+  url: http://link.zhihu.com/?target=https%3A//github.com/mitsuhiko/pipsi/
+- name: Unpacks things
+  url: http://link.zhihu.com/?target=https%3A//github.com/mitsuhiko/unp
+- name: GitHub - chrisallenlane/cheat
+  url: http://link.zhihu.com/?target=https%3A//github.com/chrisallenlane/cheat/
+- name: A fast Python in-process signal/event dispatching system
+  url: http://link.zhihu.com/?target=https%3A//github.com/jek/blinker
+- name: A useful helper for wheel deployments.
+  url: http://link.zhihu.com/?target=https%3A//github.com/mitsuhiko/platter/
+- name: Python Module for Tabular Datasets in XLS, CSV, JSON, YAML, &c
+  url: http://link.zhihu.com/?target=https%3A//github.com/kennethreitz/tablib
+- name: Full Stack Web Development with Flask
+  url: http://link.zhihu.com/?target=https%3A//github.com/realpython/discover-flask)。
+- name: faif/python-patterns
+  url: http://link.zhihu.com/?target=https%3A//github.com/faif/python-patterns
+- name: pallets/werkzeug
+  url: http://link.zhihu.com/?target=https%3A//github.com/pallets/werkzeug
+- name: bottlepy/bottle
+  url: http://link.zhihu.com/?target=https%3A//github.com/bottlepy/bottle
+- name: msiemens/tinydb
+  url: http://link.zhihu.com/?target=https%3A//github.com/msiemens/tinydb
+- name: coleifer/peewee
+  url: http://link.zhihu.com/?target=https%3A//github.com/coleifer/peewee
+- name: pallets/click
+  url: http://link.zhihu.com/?target=https%3A//github.com/pallets/click
+- name: mitsuhiko/flask-sqlalchemy
+  url: http://link.zhihu.com/?target=https%3A//github.com/mitsuhiko/flask-sqlalchemy
+- name: runscope/httpbin
+  url: http://link.zhihu.com/?target=https%3A//github.com/Runscope/httpbin
+- name: jahaja/psdash
+  url: http://link.zhihu.com/?target=https%3A//github.com/Jahaja/psdash
+- name: pallets/flask-website
+  url: http://link.zhihu.com/?target=https%3A//github.com/pallets/flask-website
+- name: pypa/warehouse
+  url: http://link.zhihu.com/?target=https%3A//github.com/pypa/warehouse
+- name: The Flask Mega-Tutorial
+  url: http://link.zhihu.com/?target=http%3A//blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
+- name: 500 Lines or Less
+  url: http://link.zhihu.com/?target=https%3A//github.com/aosabook/500lines)

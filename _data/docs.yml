@@ -1,0 +1,70 @@
+- name: ElasticSearch权威指南
+  url: https://es.xiaoleilu.com/
+
+- name: Git Pro
+  url: https://gitee.com/progit/
+
+- name: API Cheat Sheets
+  url: http://overapi.com/
+
+- name: Python 文档翻译
+  url: https://yiyibooks.cn/
+
+- name: MySQL 5.1参考手册
+  url: http://www.yq1012.com/mysql/
+
+- name: cocos2d-js 教程
+  url: https://blog.csdn.net/touchsnow/article/details/19070665
+
+- name: 在线 API 文档
+  url: http://devdocs.io/
+
+- name: Scheme语言简明教程
+  url: http://songjinghe.github.io/TYS-zh-translation/
+
+- name: NumPy 入门指南
+  url: http://www.ituring.com.cn/book/1226
+
+- name: Python Web 入坑指南
+  url: http://python-web-guide.readthedocs.io/zh/latest/
+
+- name: Real World Haskell 中文版
+  url: http://cnhaskell.com/index.html
+
+- name: Haskell Functional Programming with Types
+  url: https://upload.wikimedia.org/wikipedia/commons/2/26/Haskell.pdf
+
+- name: Learn You a Haskell for Great Good!
+  url: http://learnyouahaskell.com/chapters
+
+- name: Real World Haskell
+  url: http://book.realworldhaskell.org/read/
+
+- name: The Haskell Road to Logic, Maths and Programming
+  url: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.137.9312&rep=rep1&type=pdf
+
+- name: 范畴论与 Haskell
+  url: https://oyanglul.us/grokking-monad/
+
+- name: Haskell CIS194
+  url: http://www.seas.upenn.edu/~cis194/fall16/
+
+- name: OReilly 免费书籍
+  url: http://www.oreilly.com/programming/free/
+
+- name: 经典编程大全
+  url: https://github.com/jobbole/awesome-programming-books
+
+- name: 免费英文编程书籍
+  url: https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md
+
+- name: 免费中文编程书籍
+  url: https://github.com/justjavac/free-programming-books-zh_CN
+
+- name: Python hard way
+  url: https://learnpythonthehardway.org/book/
+
+- name: Awesome-Python
+  url: https://github.com/CodementorIO/Python-Learning-Resources
+- name: 机器学习资源库
+  url: https://github.com/hangtwenty/dive-into-machine-learning
