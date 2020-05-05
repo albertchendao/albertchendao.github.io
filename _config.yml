@@ -230,6 +230,13 @@ defaults:
       mermaid: true # false (default), true
       ## Chart
       chart: true # false (default), true
+  - scope:
+      path: ""
+      type: articles
+    values:
+      layout: articles
+      excerpt_type: html
+
 
 
 ## => Plugins
