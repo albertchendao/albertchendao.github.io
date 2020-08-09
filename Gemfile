@@ -6,5 +6,4 @@ source 'https://gems.ruby-china.com'
 gem "jekyll-text-theme"
 
 gem "tzinfo-data"
-gem "kramdown", ">= 2.3.0"
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
