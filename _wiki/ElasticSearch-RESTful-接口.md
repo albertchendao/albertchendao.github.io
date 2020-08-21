@@ -420,6 +420,32 @@ Bool Query 可以将很多查询条件组合起来, 组合条件支持 `must`, `
 }
 ```
 
+### 父子查询
+
+```javascript
+//查询某文档，只有该文档有"父文档"且满足一定条件才算匹配
+{"has_parent": {                //文档是否有 parent
+      "type": "branch",         //其 parent 所在 type 必须是 branch
+      "query": {                //其 parent 必须满足以下 query 条件
+        "match": {
+          "country": "UK"
+        }
+      }
+    }                           //如果满足以上条件，hit 该文档
+}
+//查询某文档，只有该文档有"子文档"且满足一定条件才算匹配
+{
+"has_child": {                       //文档是否有 child
+      "type":       "employee",      //其 child所在 type 必须是 employee
+      "query": {                     //其 parent 必须满足以下 query 条件
+        "match": {
+          "name": "Alice Smith"
+        }
+      }
+    }                                //如果满足以上条件，hit 该文档
+}
+```
+
 ### 聚合查询
 
 聚合查询分为 metric 聚合和 Bucketing 聚合, 两者又可以嵌套起来使用, 查询格式如下:
