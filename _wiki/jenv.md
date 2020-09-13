@@ -1,8 +1,8 @@
 ---
 layout: article
 title: jenv
-tags: [Wiki]
-key: 
+tags: []
+key: a1cbd33e-4d9a-436c-bd55-97bd49f5b231
 ---
 
 ## 安装

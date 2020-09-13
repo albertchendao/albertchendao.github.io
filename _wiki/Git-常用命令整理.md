@@ -1,11 +1,13 @@
 ---
 layout: article
 title: Git 常用命令整理
-tags: [Wiki]
-key: 
+tags: []
+key: ddd5ded5-af9d-4875-9c29-58b78c1ba9cd
 ---
 
 `GIT` 是一个分布式版本控制系统，可以用来记录若干个文件的内容变化，从而查看或者回退到文件某个版本。
+
+<!--more-->
 
 ## 特性
 

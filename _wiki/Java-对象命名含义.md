@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Java 对象命名含义
-tags: [Wiki]
+tags: []
 key: 
 ---
 

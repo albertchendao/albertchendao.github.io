@@ -1,11 +1,13 @@
 ---
 layout: article
 title: poetry
-tags: [Wiki]
-key: 
+tags: []
+key: 50d51ee8-c5e2-4db8-ae5f-b1ae9134cde5
 ---
 
 Poetry 是 Python 的一个虚拟环境和依赖管理工具，并且提供了打包和发布功能。
+
+<!--more-->
 
 ## 安装
 

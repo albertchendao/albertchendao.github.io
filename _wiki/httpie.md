@@ -1,11 +1,13 @@
 ---
 layout: article
 title: httpie
-tags: [Wiki]
-key: 
+tags: []
+key: b2cca6a8-b5cb-412c-a7dd-4fc161603006
 ---
 
 httpie 是一个类似于 curl 用于 HTTP 命令行工具，但是对人更友好。
+
+<!--more-->
 
 ## 安装
 

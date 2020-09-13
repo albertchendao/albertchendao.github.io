@@ -7,6 +7,9 @@ header:
   
   - title: Wiki
     url: /wiki/
+  
+  - title: Q & A
+    url: /question/
 
   - title: 关于
     url: /about/

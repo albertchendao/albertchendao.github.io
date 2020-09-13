@@ -1,7 +1,7 @@
 ---
 layout: article
 title: sdkman 使用
-tags: [Wiki]
+tags: []
 key: 92b12714-4cd2-43c0-877a-3808d58737a3
 ---
 

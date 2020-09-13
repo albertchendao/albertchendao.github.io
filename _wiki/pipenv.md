@@ -1,11 +1,13 @@
 ---
 layout: article
 title: pipenv
-tags: [Wiki]
-key: 
+tags: []
+key: dd23c56a-cd6e-477e-8c0d-be6673265ad4
 ---
 
 `python` 有使用 `pip` 进行包管理，但是包是所有项目共享的，后来又出现了 `virtualenv` 来分隔各个项目的依赖包。而新出现的 `pipenv` 就是用来替代这些的工具，每个项目单独一个包空间，管理自己的依赖，并且添加了更多的特性，详细的可以查看官网。
+
+<!--more-->
 
 ### 安装
 

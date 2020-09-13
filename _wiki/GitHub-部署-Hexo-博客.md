@@ -1,11 +1,13 @@
 ---
 layout: article
 title: GitHub 部署 Hexo 博客
-tags: [Wiki]
-key: 
+tags: []
+key: f4cfc411-a9cf-4fc4-8747-a9d367fd0786
 ---
 
 采用 Hexo 生成静态博客页面，然后使用 GitHub 提供的静态页面服务进行部署。
+
+<!--more-->
 
 ## 准备
 

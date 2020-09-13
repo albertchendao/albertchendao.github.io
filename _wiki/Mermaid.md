@@ -1,11 +1,13 @@
 ---
 layout: article
 title: Mermaid
-tags: [Wiki]
-key: 
+tags: []
+key: bdd1d28c-ce42-4d66-b660-1aaba56948f3
 ---
 
 Mermaid 是一个可以使用文字画流程图、时序图、甘特图、状态图的库。
+
+<!--more-->
 
 ### 流程图
 

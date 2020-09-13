@@ -1,11 +1,13 @@
 ---
 layout: article
 title: 多语言 AES 加解密
-tags: [Wiki]
-key: 
+tags: []
+key: 07cc2631-c829-42b6-ba44-d40279934ee2
 ---
 
 主要是 AES-CBC、AES-ECB 加解密。
+
+<!--more-->
 
 ## JavaScript 实现
 

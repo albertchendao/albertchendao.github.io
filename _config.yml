@@ -232,6 +232,27 @@ defaults:
       chart: true # false (default), true
   - scope:
       path: ""
+      type: question
+    values:
+      layout: article
+      tags: 
+      comment: true
+      sharing: true
+      license: false
+      aside:
+        toc: true
+      show_edit_on_github: false
+      show_subscribe: true
+      pageview: true
+      ## Mathjax
+      mathjax: true # false (default), true
+      mathjax_autoNumber: true # false (default), true
+      ## Mermaid
+      mermaid: true # false (default), true
+      ## Chart
+      chart: true # false (default), true
+  - scope:
+      path: ""
       type: home
     values:
       layout: home
@@ -252,3 +273,6 @@ collections:
     wiki:
         output: true
         permalink: /wiki/:path/
+    question:
+        output: true
+        permalink: /question/:path/

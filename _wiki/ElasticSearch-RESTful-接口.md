@@ -1,12 +1,13 @@
 ---
 layout: article
 title: ElasticSearch RESTful 接口
-tags: [Wiki]
-key: 
+tags: []
+key: 5a8bed76-c005-487c-b580-29661ec9f48b
 ---
 
-
 ElasticSearch 提供了 RESTful 接口进行操作，这里做下整理。
+
+<!--more-->
 
 ## _cat
 
