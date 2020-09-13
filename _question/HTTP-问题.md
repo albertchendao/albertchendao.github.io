@@ -1,6 +1,6 @@
 ---
 layout: article
-title: HTPP 问题
+title: HTTP 问题
 tags: []
 key: d0add1f1-60d7-4f99-91f4-70d6e9579ce3
 ---
