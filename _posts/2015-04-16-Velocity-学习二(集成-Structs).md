@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Velocity 学习二(集成 Structs)
-tags: [velocity,Java]
+tags: [Velocity,Java]
 key: f458395e-93ec-42e3-8e95-498d7701a6c4
 ---
 
