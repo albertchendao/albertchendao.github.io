@@ -5,13 +5,13 @@ tags: []
 key: 0da181df-db16-41f7-8e25-0f8675c3046d
 ---
 
-HTTP 头部 Content-Type(Mime-Type) 字段值含义整理。
+HTTP 头部 Content-Type(Mime-Type) 字段值含义整理.
 
 ## Content-Type(Mime-Type)
 
 |文件扩展名|Content-Type(Mime-Type)|文件扩展名|Content-Type(Mime-Type)|
 | --- | --- | --- | --- |
-|.*（ 二进制流，不知道下载文件类型）|application/octet-stream|.tif|image/tiff|
+|.*（ 二进制流,不知道下载文件类型）|application/octet-stream|.tif|image/tiff|
 |.001|application/x-001|.301|application/x-301|
 |.323|text/h323|.906|application/x-906|
 |.907|drawing/907|.a11|application/x-a11|

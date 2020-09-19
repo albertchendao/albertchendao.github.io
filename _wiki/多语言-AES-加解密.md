@@ -5,7 +5,7 @@ tags: []
 key: 07cc2631-c829-42b6-ba44-d40279934ee2
 ---
 
-主要是 AES-CBC、AES-ECB 加解密。
+主要是 AES-CBC、AES-ECB 加解密.
 
 <!--more-->
 
@@ -94,7 +94,7 @@ console.log(AesEcbDecrypt('yXVUkR45PFz0UfpbDB8/ew=='));
 ### 依赖包
 
 * JDK 8
-* apache 的开源 commons-codec 包。
+* apache 的开源 commons-codec 包.
 
 ### Base64
 
@@ -119,17 +119,17 @@ private static String ENCODING = "utf-8"; //编码
  * @param text   明文
  * @param secret 秘钥
  * @param iv     偏移向量
- * @return 密文，使用 Base64 编码
+ * @return 密文,使用 Base64 编码
  */
 public static String encrypt(String text, String secret, String iv) {
     try {
         Cipher cipher = Cipher.getInstance(ALGORITHM);
         byte[] raw = secret.getBytes();
         SecretKey secretKey = new SecretKeySpec(raw, ALG);
-        IvParameterSpec ivParameterSpec = new IvParameterSpec(iv.getBytes());//使用CBC模式，需要一个向量iv，可增加加密算法的强度
+        IvParameterSpec ivParameterSpec = new IvParameterSpec(iv.getBytes());//使用CBC模式,需要一个向量iv,可增加加密算法的强度
         cipher.init(Cipher.ENCRYPT_MODE, secretKey, ivParameterSpec);
         byte[] encrypted = cipher.doFinal(text.getBytes(ENCODING));
-        return Base64.encodeBase64String(encrypted);//此处使用BASE64做转码。
+        return Base64.encodeBase64String(encrypted);//此处使用BASE64做转码.
     } catch (Exception e) {
         return null;
     }
@@ -138,7 +138,7 @@ public static String encrypt(String text, String secret, String iv) {
 /**
  * 解密
  *
- * @param text   密文，使用 Base64 编码
+ * @param text   密文,使用 Base64 编码
  * @param secret 秘钥
  * @param iv     偏移向量
  * @return 明文
@@ -163,12 +163,12 @@ public static void main(String[] args) throws Exception {
     String IV = "1234567890123456";// 偏移向量
 
     String text = "123456";// 需要加密的字串
-    System.out.println("加密前的字串是：" + text);
+    System.out.println("加密前的字串是:" + text);
     String enString = encrypt(text, SECRET, IV);// 加密
-    System.out.println("加密后的字串是：" + enString);
+    System.out.println("加密后的字串是:" + enString);
     System.out.println("1jdzWuniG6UMtoa3T6uNLA==".equals(enString));
     String DeString = decrypt(enString, SECRET, IV);// 解密
-    System.out.println("解密后的字串是：" + DeString);
+    System.out.println("解密后的字串是:" + DeString);
 }
 ```
 
@@ -184,7 +184,7 @@ private static String ALGORITHM = "AES/ECB/PKCS5Padding"; // 算法/模式/补�
  *
  * @param text   明文
  * @param secret 秘钥
- * @return 密文，使用 Base64 编码
+ * @return 密文,使用 Base64 编码
  */
 public static String encrypt(String text, String secret) {
     try {
@@ -193,7 +193,7 @@ public static String encrypt(String text, String secret) {
         SecretKey secretKey = new SecretKeySpec(raw, ALG);
         cipher.init(Cipher.ENCRYPT_MODE, secretKey);
         byte[] encrypted = cipher.doFinal(text.getBytes(ENCODING));
-        return Base64.encodeBase64String(encrypted);//此处使用BASE64做转码。
+        return Base64.encodeBase64String(encrypted);//此处使用BASE64做转码.
     } catch (Exception e) {
         return null;
     }
@@ -202,7 +202,7 @@ public static String encrypt(String text, String secret) {
 /**
  * 解密
  *
- * @param text   密文，使用 Base64 编码
+ * @param text   密文,使用 Base64 编码
  * @param secret 秘钥
  * @return 明文
  */
@@ -223,12 +223,12 @@ public static String decrypt(String text, String secret) {
 public static void main(String[] args) {
     String SECRET = "1234567890123456";// 秘钥
     String text = "123456";// 需要加密的字串
-    System.out.println("加密前的字串是：" + text);
+    System.out.println("加密前的字串是:" + text);
     String enString = encrypt(text, SECRET);// 加密
-    System.out.println("加密后的字串是：" + enString);
+    System.out.println("加密后的字串是:" + enString);
     System.out.println("yXVUkR45PFz0UfpbDB8/ew==".equals(enString));
     String DeString = decrypt(enString, SECRET);// 解密
-    System.out.println("解密后的字串是：" + DeString);
+    System.out.println("解密后的字串是:" + DeString);
 }
 ```
 

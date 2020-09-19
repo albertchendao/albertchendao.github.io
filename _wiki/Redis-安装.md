@@ -5,7 +5,7 @@ tags: []
 key: 63c67aa2-a1a0-4d7e-ad55-f1df33c40df1
 ---
 
-Redis 是一个高性能的 key-value 数据库。
+Redis 是一个高性能的 key-value 数据库.
 
 <!--more-->
 
@@ -13,7 +13,7 @@ Redis 是一个高性能的 key-value 数据库。
 
 ### Mac
 
-从 [官网链接](https://redis.io/download) 下载最新的稳定(stable)版本，找到下载的包，依次执行如下命令:
+从 [官网链接](https://redis.io/download) 下载最新的稳定(stable)版本,找到下载的包,依次执行如下命令:
 
 ```bash
 # 下载
@@ -26,7 +26,7 @@ mv redis-4.0.9 /usr/local/
 cd /usr/local/redis-4.0.9/
 # 编译测试
 sudo make test
-# 编译，之后就可以使用 ./redis-4.0.9/src/redis-cli -h {} -p {} 命令
+# 编译,之后就可以使用 ./redis-4.0.9/src/redis-cli -h {} -p {} 命令
 sudo make
 # 编译安装
 sudo make install

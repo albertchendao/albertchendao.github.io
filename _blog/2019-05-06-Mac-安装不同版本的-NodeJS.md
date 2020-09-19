@@ -5,7 +5,7 @@ tags: [FrontEnd]
 key: 3296b067-2708-4095-8aad-4c58679df3d5
 ---
 
-Mac 安装不同版本的 NodeJS。
+Mac 安装不同版本的 NodeJS.
 
 <!--more-->
 
@@ -47,7 +47,7 @@ sudo n  //查看所有版本并选择
 
 [官网](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-使用如下命令：
+使用如下命令:
 
 ```bash
 brew update
@@ -55,7 +55,7 @@ brew install nvm
 mkdir ~/.nvm
 ```
 
-因为使用的 `zsh`，还需要修改 `~/.zshrc`：
+因为使用的 `zsh`,还需要修改 `~/.zshrc`:
 
 ```bash
 export NVM_DIR="$HOME/.nvm"
@@ -63,12 +63,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 ```
 
-相关命令：
+相关命令:
 
 ```bash
 # 列出所有可安装的版本
 nvm ls-remote
-# 安装指定的版本，如 nvm install v8.14.0
+# 安装指定的版本,如 nvm install v8.14.0
 nvm install <version>
 # 卸载指定的版本
 nvm uninstall <version>

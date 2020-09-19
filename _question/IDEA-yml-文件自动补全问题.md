@@ -168,7 +168,15 @@ IDEA 点击 `Build -> Rebuid Project` 会在项目的 `target/classes/META-INFO`
 
 既然指定的 `annotationProcessorPaths` 缺少了 `spring-boot-configuration-processor` 的注解驱动器, 加上就好了.
 
+## 与 Maven Profle 集成问题
+
+项目是通过 Maven 的 Profile 打包, `yml`文件被放在了 `resources/profiles/dev` 目录, IDEA 检测不到, 也不能自动补全.
+
+暂时的解决办法是在 `File -> Project Structure -> Facets -> Customize Spring Boot -> + ` 手动添加 `yml` 文件.
+
 ## 参考资料
 
 * [Configuration Metadata](https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-configuration-metadata.html#configuration-metadata-format)
 * [Maven Compile Plugin](https://maven.apache.org/plugins/maven-compiler-plugin/compile-mojo.html)
+* [IDEA Spring properties auto completion](https://stackoverflow.com/questions/44997270/intellij-spring-properties-auto-completion-in-yml-files)
+* [IDEA Spring Boot](https://www.jetbrains.com/help/idea/spring-boot.html#custom-configuration-files)

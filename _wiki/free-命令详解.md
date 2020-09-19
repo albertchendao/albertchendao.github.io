@@ -33,8 +33,8 @@ Swap:            0B          0B          0B
 | buff/cache 列 | 被 buffer 和 cache 使用的物理内存大小 | 当 free 不够时可以被回收分配给应用程序 |
 | available 列  |  还可以被应用程序使用的物理内存大小   |   available  = free + buffer + cache   |
 
-buffer 在操作系统中指 buffer cache， 中文一般翻译为 "缓冲区"。
-cache 在操作系统中指 page cache，中文一般翻译为 "页高速缓存"。
+buffer 在操作系统中指 buffer cache, 中文一般翻译为 "缓冲区".
+cache 在操作系统中指 page cache,中文一般翻译为 "页高速缓存".
 
 ## 参考链接
 

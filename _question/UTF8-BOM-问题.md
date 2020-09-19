@@ -11,7 +11,7 @@ Excel 直接打开无 BOM 的 UTF-8 CSV 文件时会乱码.
 
 ## 问题
 
-Excel 直接打开无 BOM 的 UTF-8 CSV 文件时会乱码。
+Excel 直接打开无 BOM 的 UTF-8 CSV 文件时会乱码.
 
 ## JAVA 添加 BOM
 

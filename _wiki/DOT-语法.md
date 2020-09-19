@@ -123,7 +123,7 @@ compass_pt  :   (n | ne | e | se | s | sw | w | nw | c | _)
 
 * 将子图形的元素设置为相同的属性, 比如 A, B 和 C 有相同的 `rank`: `subgraph {  rank = same; A; B; C; } `
 
-* 如果是 `cluster` 开头, 表明是一个特殊的子图. 如果布局引擎支持 `cluster`，则会将属于 `cluster`的节点绘制在一起，并将`subgraph`的整个图形包含在矩形边框内。
+* 如果是 `cluster` 开头, 表明是一个特殊的子图. 如果布局引擎支持 `cluster`,则会将属于 `cluster`的节点绘制在一起,并将`subgraph`的整个图形包含在矩形边框内.
 
 ### `node`
 
@@ -211,42 +211,42 @@ fieldId  =  [ '<' string '>'] [ string ]
 
 属性是用来描述 `graph`, `node`, `edge`等的, 声明的格式是: `(graph | node | edge) '[' [ a_list ] ']' [ attr_list ]`
 
-由`[]`包裹的多个项组成, 每个项以 `key = value` 的形式存在，项可选择 '**,**' 和 '**;**’ 结尾.
+由`[]`包裹的多个项组成, 每个项以 `key = value` 的形式存在,项可选择 '**,**' 和 '**;**’ 结尾.
 
 各个元素(E(edge), N(node, G(root graph,S(subgraphs), C(cluster subgraphs))支持的[属性](http://www.graphviz.org/doc/info/attrs.html):
 
-- `arrowhead(E)`：箭头形状，取值：[arrowType](http://www.graphviz.org/doc/info/attrs.html#k:arrowType)，类似`arrowtail`；
-- `arrowsize(E)`：箭头大小，取值（0~1.0）；
-- `bgcolor(GC)`：背景颜色，可以是纯色[color](http://www.graphviz.org/doc/info/attrs.html#k:color)或者渐变色[colorList](http://www.graphviz.org/doc/info/attrs.html#k:colorList)；
-- `clusterrank(G)`：设置为`local`（默认值）后，cluster开头的subgraph会增加边框；
-- `color(ENC)`：颜色，一般是边框，`fillcolor(NEG)`是内部颜色；
-- `colorscheme(ENCG)`：指定颜色的方案，在指定颜色时可以使用`color=1`的方式，会方便很多；不指定也会有一套默认的颜色方案；
-- `compound(G)`：设置`true`后，可在cluster之间连线；
-- `concentrate(G)`：设置`true`后，会将重复的连线进行合并；
-- `constraint(E)`：设置为`false`后，这条边不会用来考虑节点的排序，节点的排序只依赖其他的边；
-- `decorate(E)`：
-- `dim(G)`：
-- `dimen(G)`：
-- `dir(E)`：指定边的方向，可以的值有forward、back、both、none;
-- `diredgeconstraints(G)`：
-- `distortion(N)`：影响多边形的形状，上面大or下面大；
-- `dpi(G)`：每英寸的像素数量，调节生成图片的清晰度；
-- `edgeURL、edgehref(E)`：链接；
-- `edgetarget(E)`：
-- `edgetooltip(E)`：
-- `epsilon(E)`：迭代算法用到的一个参数，中止条件，一般应该用不到；
-- `esep(G)`：
-- `fixedsize(N)`：如果设置为false，节点的大小会设置为刚好放下里面的内容，否则会严格按照给定的width和height来绘制；
-- `fontcolor(ENGC)`：文字颜色；
-- `fontname(ENGC)`：字体名称；
-- `fontnames(G)`：字体名称列表，挑最先能匹配到的字体来用；
-- `fontpath(G)`：字体文件路径；
-- `fontsize(ENGC)`：文字大小；
+- `arrowhead(E)`:箭头形状,取值:[arrowType](http://www.graphviz.org/doc/info/attrs.html#k:arrowType),类似`arrowtail`；
+- `arrowsize(E)`:箭头大小,取值（0~1.0）；
+- `bgcolor(GC)`:背景颜色,可以是纯色[color](http://www.graphviz.org/doc/info/attrs.html#k:color)或者渐变色[colorList](http://www.graphviz.org/doc/info/attrs.html#k:colorList)；
+- `clusterrank(G)`:设置为`local`（默认值）后,cluster开头的subgraph会增加边框；
+- `color(ENC)`:颜色,一般是边框,`fillcolor(NEG)`是内部颜色；
+- `colorscheme(ENCG)`:指定颜色的方案,在指定颜色时可以使用`color=1`的方式,会方便很多；不指定也会有一套默认的颜色方案；
+- `compound(G)`:设置`true`后,可在cluster之间连线；
+- `concentrate(G)`:设置`true`后,会将重复的连线进行合并；
+- `constraint(E)`:设置为`false`后,这条边不会用来考虑节点的排序,节点的排序只依赖其他的边；
+- `decorate(E)`:
+- `dim(G)`:
+- `dimen(G)`:
+- `dir(E)`:指定边的方向,可以的值有forward、back、both、none;
+- `diredgeconstraints(G)`:
+- `distortion(N)`:影响多边形的形状,上面大or下面大；
+- `dpi(G)`:每英寸的像素数量,调节生成图片的清晰度；
+- `edgeURL、edgehref(E)`:链接；
+- `edgetarget(E)`:
+- `edgetooltip(E)`:
+- `epsilon(E)`:迭代算法用到的一个参数,中止条件,一般应该用不到；
+- `esep(G)`:
+- `fixedsize(N)`:如果设置为false,节点的大小会设置为刚好放下里面的内容,否则会严格按照给定的width和height来绘制；
+- `fontcolor(ENGC)`:文字颜色；
+- `fontname(ENGC)`:字体名称；
+- `fontnames(G)`:字体名称列表,挑最先能匹配到的字体来用；
+- `fontpath(G)`:字体文件路径；
+- `fontsize(ENGC)`:文字大小；
 - ...
 
 ## 参考链接
 
-* [Graphviz绘图（三）：节点图形]([https://www.bitlogs.tech/2019/11/graphviz%E7%BB%98%E5%9B%BE%E4%B8%89%E8%8A%82%E7%82%B9%E5%9B%BE%E5%BD%A2/](https://www.bitlogs.tech/2019/11/graphviz绘图三节点图形/))
+* [Graphviz绘图（三）:节点图形]([https://www.bitlogs.tech/2019/11/graphviz%E7%BB%98%E5%9B%BE%E4%B8%89%E8%8A%82%E7%82%B9%E5%9B%BE%E5%BD%A2/](https://www.bitlogs.tech/2019/11/graphviz绘图三节点图形/))
 * [Dot 语法](http://wsztrush.com/2018/10/16/dot/)
 * [Graphviz 画图的一些总结](https://www.cnblogs.com/shuqin/p/11897207.html)
 

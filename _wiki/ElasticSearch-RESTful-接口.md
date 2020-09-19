@@ -5,17 +5,17 @@ tags: []
 key: 5a8bed76-c005-487c-b580-29661ec9f48b
 ---
 
-ElasticSearch 提供了 RESTful 接口进行操作，这里做下整理。
+ElasticSearch 提供了 RESTful 接口进行操作,这里做下整理.
 
 <!--more-->
 
 ## _cat
 
-`_cat` 相关的可以用来查看 ES 的各种状态，可以用 `curl localhost:9200/_cat` 查看支持的命令:
+`_cat` 相关的可以用来查看 ES 的各种状态,可以用 `curl localhost:9200/_cat` 查看支持的命令:
 
 ```bash
 $ curl localhost:9200/_cat
-# 查看每个节点上的分片数(shards)，以及每个节点剩余磁盘
+# 查看每个节点上的分片数(shards),以及每个节点剩余磁盘
 /_cat/allocation
 # 查看分片
 /_cat/shards
@@ -137,7 +137,7 @@ GET index/type/id/_termvectors?fields=fieldsName
 
 ## _search
 
-`_search` 使用 json 进行操作，例如:
+`_search` 使用 json 进行操作,例如:
 
 ```bash
 curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
@@ -146,7 +146,7 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 }'
 ```
 
-返回内容也是个 json。
+返回内容也是个 json.
 
 ```json
 {
@@ -170,17 +170,17 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 }
 ```
 
-* `took` : 查询花费的时间，毫秒单位
+* `took` : 查询花费的时间,毫秒单位
 * `time_out` : 标识查询是否超时
-* `_shards` : 描述了查询分片的信息，查询了多少个分片、成功的分片数量、失败的分片数量等
-* `hits` : 搜索的结果，total是全部的满足的文档数目，hits是返回的实际数目（默认是10）
-* `_score` : 是文档的分数信息，与排名相关度有关，参考各大搜索引擎的搜索结果，就容易理解。
+* `_shards` : 描述了查询分片的信息,查询了多少个分片、成功的分片数量、失败的分片数量等
+* `hits` : 搜索的结果,total是全部的满足的文档数目,hits是返回的实际数目（默认是10）
+* `_score` : 是文档的分数信息,与排名相关度有关,参考各大搜索引擎的搜索结果,就容易理解.
 
 常用的查询有如下:
 
 ### Term Query
 
-直接使用关键字进行查询，不对关键字进行分词, 文档中必须包含整个搜索的词:
+直接使用关键字进行查询,不对关键字进行分词, 文档中必须包含整个搜索的词:
 
 ```json
 {
@@ -201,10 +201,10 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 
 ### Terms Query
 
-指定多个关键字进行查询, 匹配其一即可。
+指定多个关键字进行查询, 匹配其一即可.
 
-当 term 的个数少的时候，termsQuery  等效为多个 termQuery 使用 boolQuery 使用 or 操作符连接起来；
-当 term 的个数多的时候，termsQuery 查询创建一个位集的方式进行查询，效率会比普通的 bool 方式好一些
+当 term 的个数少的时候,termsQuery  等效为多个 termQuery 使用 boolQuery 使用 or 操作符连接起来；
+当 term 的个数多的时候,termsQuery 查询创建一个位集的方式进行查询,效率会比普通的 bool 方式好一些
 
 ```json
 {
@@ -220,7 +220,7 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 
 ### Match Query
 
-匹配的时候，会将查询的关键字进行分词，合并每个分词后的查询结果:
+匹配的时候,会将查询的关键字进行分词,合并每个分词后的查询结果:
 
 ```json
 {
@@ -238,7 +238,7 @@ curl -XPOST 'localhost:9200/bank/_search?pretty' -d '
 
 ### Match Phrase Query
 
-在 Match Query 的基础上更进一步，筛选所有分词都匹配的结果:
+在 Match Query 的基础上更进一步,筛选所有分词都匹配的结果:
 
 ```json
 {
@@ -424,7 +424,7 @@ Bool Query 可以将很多查询条件组合起来, 组合条件支持 `must`, `
 ### 父子查询
 
 ```javascript
-//查询某文档，只有该文档有"父文档"且满足一定条件才算匹配
+//查询某文档,只有该文档有"父文档"且满足一定条件才算匹配
 {"has_parent": {                //文档是否有 parent
       "type": "branch",         //其 parent 所在 type 必须是 branch
       "query": {                //其 parent 必须满足以下 query 条件
@@ -432,9 +432,9 @@ Bool Query 可以将很多查询条件组合起来, 组合条件支持 `must`, `
           "country": "UK"
         }
       }
-    }                           //如果满足以上条件，hit 该文档
+    }                           //如果满足以上条件,hit 该文档
 }
-//查询某文档，只有该文档有"子文档"且满足一定条件才算匹配
+//查询某文档,只有该文档有"子文档"且满足一定条件才算匹配
 {
 "has_child": {                       //文档是否有 child
       "type":       "employee",      //其 child所在 type 必须是 employee
@@ -443,7 +443,7 @@ Bool Query 可以将很多查询条件组合起来, 组合条件支持 `must`, `
           "name": "Alice Smith"
         }
       }
-    }                                //如果满足以上条件，hit 该文档
+    }                                //如果满足以上条件,hit 该文档
 }
 ```
 
@@ -452,14 +452,14 @@ Bool Query 可以将很多查询条件组合起来, 组合条件支持 `must`, `
 聚合查询分为 metric 聚合和 Bucketing 聚合, 两者又可以嵌套起来使用, 查询格式如下:
 
 ```javascript
-"aggregations" : {                  // 表示聚合操作，可以使用aggs替代
-    "<aggregation_name>" : {        // 聚合名，可以是任意的字符串。用做响应的key，便于快速取得正确的响应数据。
-        "<aggregation_type>" : {    // 聚合类别，就是各种类型的聚合，如min等
-            "<aggregation_body>":{}// 聚合体，不同的聚合有不同的body
+"aggregations" : {                  // 表示聚合操作,可以使用aggs替代
+    "<aggregation_name>" : {        // 聚合名,可以是任意的字符串.用做响应的key,便于快速取得正确的响应数据.
+        "<aggregation_type>" : {    // 聚合类别,就是各种类型的聚合,如min等
+            "<aggregation_body>":{}// 聚合体,不同的聚合有不同的body
         }
-        [,"aggregations" : {  }]    // 嵌套的子聚合，可以有0或多个
+        [,"aggregations" : {  }]    // 嵌套的子聚合,可以有0或多个
     }
-    [,"<aggregation_name_2>" : {  } ] // 另外的聚合，可以有0或多个
+    [,"<aggregation_name_2>" : {  } ] // 另外的聚合,可以有0或多个
 }
 ```
 
@@ -518,7 +518,7 @@ Bool Query 可以将很多查询条件组合起来, 组合条件支持 `must`, `
 
 #### metric 聚合
 
-metric 聚合用于对数字类型的数据进行计算。
+metric 聚合用于对数字类型的数据进行计算.
 
 ##### Min Aggregation
 

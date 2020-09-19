@@ -13,7 +13,7 @@ MySQL 使用中相关的问题.
 
 MacOS 通过 `brew` 安装 `mysql` 后启动报错:`ERROR! The server quit without updating PID file (/usr/local/var/mysql/bogon.pid).`
 
-查看 `cat /usr/local/var/mysql/*.err|tail -100f` 发现如下 BUG：
+查看 `cat /usr/local/var/mysql/*.err|tail -100f` 发现如下 BUG:
 
 ```bash
 2020-04-20T13:38:20.6NZ mysqld_safe Logging to '/usr/local/var/mysql/bogon.err'.
@@ -24,7 +24,7 @@ dyld: Library not loaded: /usr/local/opt/openssl/lib/libssl.1.0.0.dylib
 2020-04-20T13:38:20.6NZ mysqld_safe mysqld from pid file /usr/local/var/mysql/bogon.pid ended
 ```
 
-解决方法是执行如下命令：
+解决方法是执行如下命令:
 
 ```bash
 brew switch openssl 1.0.2s
@@ -34,9 +34,9 @@ brew switch openssl 1.0.2s
 
 ## MySQL 编码
 
-MySQL 使用的 `utf8` 编码，插入的时候报错: `Incorrect string value: '\xF0\x9F\x87\xA8\xF0\x9F...' for column 'model' at row 317`。
+MySQL 使用的 `utf8` 编码,插入的时候报错: `Incorrect string value: '\xF0\x9F\x87\xA8\xF0\x9F...' for column 'model' at row 317`.
 
-这个编码 `\xF0\x9F\x87\xA8\xF0\x9F` 就是 `utf8` 编码的 16 进制形式，转换成可读的字符串：
+这个编码 `\xF0\x9F\x87\xA8\xF0\x9F` 就是 `utf8` 编码的 16 进制形式,转换成可读的字符串:
 
 ```java
     public static void main(String[] args) {
@@ -56,7 +56,7 @@ MySQL 使用的 `utf8` 编码，插入的时候报错: `Incorrect string value: 
     }
 ```
 
-结果：
+结果:
 
 ```bash
 11110000

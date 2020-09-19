@@ -29,26 +29,26 @@ brew install wrk
 ### 参数
 
 ```bash
--c：总的连接数（每个线程处理的连接数=总连接数/线程数）
--d：测试的持续时间，如2s(2second)，2m(2minute)，2h(hour)
--t：需要执行的线程总数
--s：执行Lua脚本，这里写lua脚本的路径和名称，后面会给出案例
--H：需要添加的头信息，注意header的语法，举例，-H “token: abcdef”，说明一下，token，冒号，空格，abcdefg（不要忘记空格，否则会报错的）。
-—timeout：超时的时间
-—latency：显示延迟统计信息
+-c:总的连接数（每个线程处理的连接数=总连接数/线程数）
+-d:测试的持续时间,如2s(2second),2m(2minute),2h(hour)
+-t:需要执行的线程总数
+-s:执行Lua脚本,这里写lua脚本的路径和名称,后面会给出案例
+-H:需要添加的头信息,注意header的语法,举例,-H “token: abcdef”,说明一下,token,冒号,空格,abcdefg（不要忘记空格,否则会报错的）.
+—timeout:超时的时间
+—latency:显示延迟统计信息
 ```
 
 ### 返回结果
 
 ```bash
-Latency：响应时间
-Req/Sec：每个线程每秒钟的执行的连接数
-Avg：平均
-Max：最大
-Stdev：标准差
-+/- Stdev： 正负一个标准差占比
-Requests/sec：每秒请求数（也就是QPS），这是一项压力测试的性能指标，通过这个参数可以看出吞吐量
-Latency Distribution，如果命名中添加了—latency就会出现相关信息
+Latency:响应时间
+Req/Sec:每个线程每秒钟的执行的连接数
+Avg:平均
+Max:最大
+Stdev:标准差
++/- Stdev: 正负一个标准差占比
+Requests/sec:每秒请求数（也就是QPS）,这是一项压力测试的性能指标,通过这个参数可以看出吞吐量
+Latency Distribution,如果命名中添加了—latency就会出现相关信息
 ```
 
 ### LUA 脚本
@@ -209,7 +209,7 @@ end
 ### 实际使用
 
 ```bash
-# 使用8个线程200个连接，对bing首页进行了30秒的压测，并要求在压测结果中输出响应延迟信息
+# 使用8个线程200个连接,对bing首页进行了30秒的压测,并要求在压测结果中输出响应延迟信息
 wrk -t8 -c200 -d30s --latency  "http://www.bing.com"
 ```
 
@@ -217,7 +217,7 @@ wrk -t8 -c200 -d30s --latency  "http://www.bing.com"
 
 ```bash
 Running 30s test @ http://www.bing.com （压测时间30s）
-  8 threads and 200 connections （共8个测试线程，200个连接）
+  8 threads and 200 connections （共8个测试线程,200个连接）
   Thread Stats   Avg      Stdev     Max   +/- Stdev
               （平均值） （标准差）（最大值）（正负一个标准差所占比例）
     Latency    46.67ms  215.38ms   1.67s    95.59%
@@ -229,7 +229,7 @@ Running 30s test @ http://www.bing.com （压测时间30s）
      75%    3.78ms
      90%    4.73ms
      99%    1.35s （99分位的延迟）
-  1790465 requests in 30.01s, 684.08MB read （30.01秒内共处理完成了1790465个请求，读取了684.08MB数据）
+  1790465 requests in 30.01s, 684.08MB read （30.01秒内共处理完成了1790465个请求,读取了684.08MB数据）
 Requests/sec:  59658.29 （平均每秒处理完成59658.29个请求）
 Transfer/sec:     22.79MB （平均每秒读取数据22.79MB）
 ```

@@ -5,7 +5,7 @@ tags: []
 key: e5eb3808-d388-4aa6-b3eb-ff220a5119cc
 ---
 
-`CORS`全称是"跨域资源共享"(Cross-origin resource sharing), 它允许浏览器向跨域(`origin`)服务器发出资源请求。
+`CORS`全称是"跨域资源共享"(Cross-origin resource sharing), 它允许浏览器向跨域(`origin`)服务器发出资源请求.
 
 <!-- more -->
 
@@ -32,13 +32,13 @@ Access to XMLHttpRequest at 'origin_two/api' from origin 'oriing_one' has been b
 | 请求头                           | 含义                                                         |
 | -------------------------------- | ------------------------------------------------------------ |
 | Access-Control-Allow-Origin      | 指示请求的资源能共享给哪些域                                 |
-| Access-Control-Allow-Credentials | 当为 true 时, 允许客户端携带验证信息，例如 cookie 之类的     |
-| Access-Control-Allow-Headers     | 用在对预请求的响应中，指示实际的请求中可以使用哪些 HTTP 头   |
-| Access-Control-Allow-Methods     | 指定对预请求的响应中，哪些 HTTP 方法允许访问请求的资源       |
+| Access-Control-Allow-Credentials | 当为 true 时, 允许客户端携带验证信息,例如 cookie 之类的     |
+| Access-Control-Allow-Headers     | 用在对预请求的响应中,指示实际的请求中可以使用哪些 HTTP 头   |
+| Access-Control-Allow-Methods     | 指定对预请求的响应中,哪些 HTTP 方法允许访问请求的资源       |
 | Access-Control-Expose-Headers    | 指示哪些 HTTP 头的名称能在响应中列出                         |
 | Access-Control-Max-Age           | 指示预请求的结果能被缓存多久                                 |
-| Access-Control-Request-Headers   | 用于发起一个预请求，告知服务器正式请求会使用那些 HTTP 头     |
-| Access-Control-Request-Method    | 用于发起一个预请求，告知服务器正式请求会使用哪一种 HTTP 请求方法 |
+| Access-Control-Request-Headers   | 用于发起一个预请求,告知服务器正式请求会使用那些 HTTP 头     |
+| Access-Control-Request-Method    | 用于发起一个预请求,告知服务器正式请求会使用哪一种 HTTP 请求方法 |
 | Origin                           | 指示获取资源的请求是从什么域发起的                           |
 
 浏览器将所有跨域请求分为两种, 处理方式不一样.

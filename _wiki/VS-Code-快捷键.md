@@ -5,7 +5,7 @@ tags: []
 key: 5d00a9ed-f8ff-4c63-9883-54e9965e2e01
 ---
 
-常用的 Visual Studio Code 快捷键。
+常用的 Visual Studio Code 快捷键.
 
 <!--more-->
 
@@ -25,7 +25,7 @@ key: 5d00a9ed-f8ff-4c63-9883-54e9965e2e01
 ### 代码编辑
 
 * 代码行缩进: `Command+[` 、 `Command+]`
-* 代码格式化: `Shift+Alt+F`，或 `Ctrl+Shift+P` 后输入 format code
+* 代码格式化: `Shift+Alt+F`,或 `Ctrl+Shift+P` 后输入 format code
 * 上下移动一行: `Alt+Up` 或 `Alt+Down`
 * 向上向下复制一行: `Shift+Alt+Up` 或 `Shift+Alt+Down`
 * 在当前行下边插入一行: `Command+Enter`
@@ -39,6 +39,6 @@ key: 5d00a9ed-f8ff-4c63-9883-54e9965e2e01
 * 移动到文件结尾: `Command+Down`
 * 移动到文件开头: `Command+Up`
 * 删除光标左侧: `Command+Delete`
-* 多行编辑(列编辑): `Alt+Shift+鼠标左键`， `Ctrl+Alt+Down/Up`
+* 多行编辑(列编辑): `Alt+Shift+鼠标左键`, `Ctrl+Alt+Down/Up`
 
 

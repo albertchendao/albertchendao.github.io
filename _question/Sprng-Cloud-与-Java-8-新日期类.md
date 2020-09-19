@@ -5,13 +5,13 @@ tags: []
 key: f81cacec-b48e-4387-b262-bd606343f9aa
 ---
 
-Spring Cloud 中使用 Java 8 时间日期 API（LocalDate等）的序列化问题。
+Spring Cloud 中使用 Java 8 时间日期 API（LocalDate等）的序列化问题.
 
 <!--more-->
 
 ## 问题
 
-Spring Cloud 默认序列化 Java 8 的日期会变成数值，比如: `[2018,9,10]`, 然后如果使用 `Feign` 进行反序列化就会出现:
+Spring Cloud 默认序列化 Java 8 的日期会变成数值,比如: `[2018,9,10]`, 然后如果使用 `Feign` 进行反序列化就会出现:
 
 ```
 JSON parse error: Can not construct instance of java.time.LocalDate: no suitable constructor found, can not deserialize from Object value

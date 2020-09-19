@@ -11,7 +11,7 @@ key: 3da3520e-22e3-44dd-b4a5-f53a372ad1b4
 
 ## 问题
 
-使用 `maven-assembly-plugin` 打包可执行 jar 包，启动的时候报如下问题:
+使用 `maven-assembly-plugin` 打包可执行 jar 包,启动的时候报如下问题:
 
 ```bash
 19/12/25 14:53:03 INFO elasticsearch.plugins: [Elizabeth Twoyoungmen] modules [], plugins [], sites []
@@ -67,25 +67,25 @@ Caused by: java.lang.IllegalArgumentException: An SPI class of type org.apache.l
 
 查看源码可以知道 `org.apache.lucene.codecs.PostingsFormat` 这个服务有多个依赖的 jar 包进行注入:
 
-1. `org.elasticsearch:elasticsearch:2.3.2` 包的`/META-INF/services/org.apache.lucene.codecs.PostingsFormat`，内容为:
+1. `org.elasticsearch:elasticsearch:2.3.2` 包的`/META-INF/services/org.apache.lucene.codecs.PostingsFormat`,内容为:
 
     ```bash
     org.elasticsearch.index.codec.postingsformat.Elasticsearch090PostingsFormat
     org.elasticsearch.search.suggest.completion.Completion090PostingsFormat
     org.elasticsearch.index.codec.postingsformat.BloomFilterPostingsFormat
     ```
- 2. `org.apache.lucene:lucene-core:5.5.0` 包的 `/META-INF/services/org.apache.lucene.codecs.PostingsFormat`，内容为:
+ 2. `org.apache.lucene:lucene-core:5.5.0` 包的 `/META-INF/services/org.apache.lucene.codecs.PostingsFormat`,内容为:
 
     ```bash
     org.apache.lucene.codecs.lucene50.Lucene50PostingsFormat
     ```
     
 
-使用 `maven-assembly-plugin` 进行打包的时候会将依赖的所有 jar 包解压，然后合并到一个 jar 包，同名文件默认直接覆盖造成了 `org.apache.lucene:lucene-core:5.5.0` 包的 SPI 注入配置被覆盖。
+使用 `maven-assembly-plugin` 进行打包的时候会将依赖的所有 jar 包解压,然后合并到一个 jar 包,同名文件默认直接覆盖造成了 `org.apache.lucene:lucene-core:5.5.0` 包的 SPI 注入配置被覆盖.
 
 ## 解决方法
 
-使用 `maven-shade-plugin` 替代 `maven-assembly-plugin`，并且指定合并 SPI 配置文件: `org.apache.maven.plugins.shade.resource.ServicesResourceTransformer`
+使用 `maven-shade-plugin` 替代 `maven-assembly-plugin`,并且指定合并 SPI 配置文件: `org.apache.maven.plugins.shade.resource.ServicesResourceTransformer`
 
 pom.xml 文件内容:
 

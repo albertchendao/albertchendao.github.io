@@ -5,7 +5,7 @@ tags: []
 key: 2bfc99e4-c49d-4a37-a15b-4c15d9cb540e
 ---
 
-Sysbench 是一个数据库压测工具。
+Sysbench 是一个数据库压测工具.
 
 <!--more-->
 
@@ -43,7 +43,7 @@ sysbench [options]... [testname] [command]
 
 #### options
 
-测试相关的信息。
+测试相关的信息.
 
 
 | 可选值 | 含义 |
@@ -52,7 +52,7 @@ sysbench [options]... [testname] [command]
 | --mysql-port | mysql 端口 |
 | --mysql-user | mysql 账号 |
 | --mysql-password | mysql 密码 |
-| --oltp-test-mode | 执行模式: simple(查)、nontrx(增改查)、complex(增删改查，默认值) |
+| --oltp-test-mode | 执行模式: simple(查)、nontrx(增改查)、complex(增删改查,默认值) |
 | --oltp-tables-count | 测试表数量 |
 | --oltp-table-size | 测试表数据量 |
 | --threads | 并发连接数 |
@@ -61,7 +61,7 @@ sysbench [options]... [testname] [command]
 
 #### testname
 
-指定需要执行的脚本。
+指定需要执行的脚本.
 
 #### command
 
